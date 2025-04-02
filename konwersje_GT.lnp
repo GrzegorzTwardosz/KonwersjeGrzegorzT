@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\1_uinttohexstr.o"
+--strict --scatter ".\konwersje_GT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\konwersje_GT.map" -o .\konwersje_GT.axf
